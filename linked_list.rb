@@ -1,6 +1,7 @@
 require_relative "node.rb"
 
 class LinkedList
+    
     attr_accessor :size, :head, :tail
     def initialize
          @head = nil

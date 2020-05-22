@@ -1,7 +1,7 @@
 require_relative "node.rb"
 
 class LinkedList
-    
+
     attr_accessor :size, :head, :tail
     def initialize
          @head = nil
@@ -47,7 +47,7 @@ class LinkedList
         i.times do 
             check = check.next_node
         end
-        check.value
+        check
     end
 
     def pop
@@ -99,5 +99,52 @@ class LinkedList
         end
         str += "nil"
         str
+    end
+
+    def insert_at(value, index)
+        return false if index > @size
+
+        node_to_insert = Node.new(value)
+
+        @tail = node_to_insert if index == @size
+
+        if index == 1
+            @size += 1
+            node_to_insert = Node.new(value, @head)
+            @head = node_to_insert
+            return
+        end
+
+        check = @head
+        (index - 2).times do 
+            check = check.next_node
+        end
+
+        next_node = check.next_node
+        check.next_node = node_to_insert
+        node_to_insert.next_node = next_node
+        @size += 1
+    end
+
+    def remove_at(index)
+        return false if index > @size
+
+        check = @head
+
+        if index == 1
+            @head = check.next_node
+            @size -= 1
+            return
+        end
+
+        (index - 2).times do
+            check = check.next_node
+        end
+
+        next_next_node = check.next_node.next_node
+        check.next_node = next_next_node
+
+        @tail = check if index == @size
+        @size -= 1
     end
 end

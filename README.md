@@ -1,5 +1,5 @@
 # Linked List in Ruby
-Odin Project - Recursion
+Odin Project - Linked List
 # Table of Contents
 - [Information](https://github.com/fussykyloren/ruby-linked-list#information)
 - [Status](https://github.com/fussykyloren/ruby-linked-list#status)

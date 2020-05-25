@@ -5,7 +5,7 @@ Odin Project - Linked List
 - [Status](https://github.com/fussykyloren/ruby-linked-list#status)
 - [Instructions](https://github.com/fussykyloren/ruby-linked-list#instructions)
 ## Information
-Here's a new game for you! Play Hangman straight from your console! All the files you will need to run this are in this repository with the instructions in the instructions section. This program is built using Ruby v2.6.3p62.
+In this project, a linked list is implemented using Ruby. All the files you will need to run this are in this repository with the instructions in the instructions section. This program is built using Ruby v2.6.3p62.
 ## Status
 At this time, the project is __*finished*__.
 ## Instructions
